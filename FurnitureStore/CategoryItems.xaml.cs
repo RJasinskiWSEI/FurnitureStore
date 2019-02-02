@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FurnitureStore.Windows
+namespace FurnitureStore
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CategoryItems.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CategoryItems : Page
     {
-        public MainWindow()
+        public CategoryItems()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new CategoryItems();
         }
     }
 }
