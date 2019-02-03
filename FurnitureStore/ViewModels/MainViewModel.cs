@@ -12,7 +12,7 @@ namespace FurnitureStore.ViewModels
 
         public ICommand OpenCartCommand => new Command(() => _navigationService.NavigateToAsync<CartViewModel>());
 
-
+        
         public MainViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;

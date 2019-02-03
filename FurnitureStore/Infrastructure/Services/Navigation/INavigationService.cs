@@ -5,6 +5,8 @@ namespace FurnitureStore.Infrastructure.Services.Navigation
 {
     public interface INavigationService
     {
+        Task Initialize();
+
         Task NavigateToAsync<TViewModel>()
             where TViewModel : ViewModelBase;
 

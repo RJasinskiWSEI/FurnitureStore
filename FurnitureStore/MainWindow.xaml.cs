@@ -1,5 +1,8 @@
-﻿using System;
+﻿using FurnitureStore.Infrastructure.IoC;
+using FurnitureStore.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,21 +25,24 @@ namespace FurnitureStore.Windows
     {
         #region IMainPageController
 
-        public Page LoadedPage { get; set; } 
-        
+        private Page _loadedPage;
+
+        public Page LoadedPage
+        {
+            get => _loadedPage;
+            set
+            {
+                _loadedPage = value;
+                Main.Content = value;
+            }
+        }
+
         #endregion
 
 
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
-
-            Main.Content = new CategoryItems();
         }
     }
 

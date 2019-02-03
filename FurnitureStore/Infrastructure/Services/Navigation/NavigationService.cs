@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using FurnitureStore.Infrastructure.Exceptions;
+using FurnitureStore.ViewModels;
 using FurnitureStore.ViewModels.Base;
 using FurnitureStore.Windows;
 using System.Threading.Tasks;
@@ -16,6 +17,16 @@ namespace FurnitureStore.Infrastructure.Services.Navigation
         {
             _context = context;
             _mainPageController = mainPageController;
+        }
+
+        public Task Initialize()
+        {
+            var mainWindow = _context.Resolve<MainWindow>();
+
+            mainWindow.DataContext = _context.Resolve<MainViewModel>();
+            mainWindow.Show();
+
+            return Task.CompletedTask;
         }
 
         public async Task NavigateToAsync<TViewModel>()

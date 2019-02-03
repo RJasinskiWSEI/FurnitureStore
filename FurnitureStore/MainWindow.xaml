@@ -7,6 +7,7 @@
         xmlns:local="clr-namespace:FurnitureStore.Windows"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
+    
     <Grid>
         <Grid x:Name="TopNavigation" Height="80" Background="#1976D2" VerticalAlignment="Top">
             <Grid x:Name="AppName">
@@ -19,14 +20,14 @@
             </Grid>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="250">
                 <TextBlock Text="Dominik Michalski" Foreground="#FFFFFF" Margin="15,15,15,15" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                <Button Content="Koszyk" BorderThickness="0" HorizontalAlignment="Right" Background="#9E9E9E"/>
+                <Button Command="{ Binding Path = OpenCartCommand }" Content="Koszyk" BorderThickness="0" HorizontalAlignment="Right" Background="#9E9E9E"/>
             </StackPanel>
         </Grid>
         <Grid x:Name="MainNavigation" Width="200" Background="#2196F3" HorizontalAlignment="Left" Margin="0,80,0,0">
             <TextBlock Text="Kategorie:" FontSize="20" Padding="10,10,0,0" Foreground="#FFFFFF" FontWeight="Bold" />
             <StackPanel  Margin="0,50,0,0">
 
-                <Button Click="Button_Click" Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Stoły" Background="#9E9E9E" />
+                <Button Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Stoły" Background="#9E9E9E" />
                 <Button Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Szafy" Background="#BDBDBD" />
                 <Button Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Łóżka" Background="#9E9E9E" />
 

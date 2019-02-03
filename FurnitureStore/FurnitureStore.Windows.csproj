@@ -64,12 +64,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CartView.xaml.cs">
+      <DependentUpon>CartView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Commands\Command.cs" />
+    <Compile Include="Infrastructure\Exceptions\ControlNotInitializedException.cs" />
+    <Compile Include="Infrastructure\IoC\DependencyLocator.cs" />
     <Compile Include="Infrastructure\Services\Navigation\IInputData.cs" />
     <Compile Include="Infrastructure\Services\Navigation\INavigationService.cs" />
     <Compile Include="Infrastructure\Services\Navigation\NavigationService.cs" />
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
+    <Compile Include="ViewModels\CartViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Page Include="CartView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CategoryItems.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

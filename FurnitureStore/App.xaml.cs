@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using FurnitureStore.Infrastructure.IoC;
+using FurnitureStore.Infrastructure.Services.Navigation;
 using System.Windows;
 
 namespace FurnitureStore.Windows
@@ -13,5 +9,24 @@ namespace FurnitureStore.Windows
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            InitializeIoC();
+            InitializeNavigation();
+
+            base.OnStartup(e);
+        }
+
+        private void InitializeIoC()
+        {
+            DependencyLocator.Initialize();
+        }
+
+        private async void InitializeNavigation()
+        {
+            var navigation = DependencyLocator.Resolve<INavigationService>();
+
+            await navigation.Initialize();
+        }
     }
 }
