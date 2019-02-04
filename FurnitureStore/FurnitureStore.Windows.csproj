@@ -79,9 +79,13 @@
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
     <Compile Include="ViewModels\CartViewModel.cs" />
     <Compile Include="ViewModels\CategoryContentViewModel.cs" />
+    <Compile Include="ViewModels\FurnitureItemPreviewViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\CategoryContentView.xaml.cs">
       <DependentUpon>CategoryContentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FurnitureItemPreviewView.xaml.cs">
+      <DependentUpon>FurnitureItemPreviewView.xaml</DependentUpon>
     </Compile>
     <Page Include="CartView.xaml">
       <SubType>Designer</SubType>
@@ -100,6 +104,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\CategoryContentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FurnitureItemPreviewView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

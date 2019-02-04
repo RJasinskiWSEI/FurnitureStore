@@ -36,13 +36,6 @@ namespace FurnitureStore.Windows
             {
                 _loadedPage = value;
                 Main.Content = value;
-
-                //Main.Refresh();
-
-                if (Main.CanGoBack)
-                {
-                    Main.RemoveBackEntry();
-                }
             }
         }
 

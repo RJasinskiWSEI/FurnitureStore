@@ -40,7 +40,7 @@
             <TextBlock Margin="0,0,0,5" Foreground="#FFFFFF" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="Copyright 2019 © WSEI" FontSize="9" />
         </Grid>
         <Grid Margin="200,80,0,0">
-            <Frame x:Name="Main">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden">
                 
             </Frame>
         </Grid>

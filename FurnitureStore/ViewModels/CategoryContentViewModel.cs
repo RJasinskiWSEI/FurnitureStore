@@ -1,4 +1,5 @@
-﻿using FurnitureStore.Infrastructure.Services.FurnitureItems;
+﻿using FurnitureStore.Commands;
+using FurnitureStore.Infrastructure.Services.FurnitureItems;
 using FurnitureStore.Infrastructure.Services.Navigation;
 using FurnitureStore.ViewModels.Base;
 using FurnitureStore.Views;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace FurnitureStore.ViewModels
 {
@@ -26,6 +28,7 @@ namespace FurnitureStore.ViewModels
 
         private FurnitureItem _selectedItem;
         private readonly IFurnitureItemsService _furnitureItemsService;
+        private readonly INavigationService _navigationService;
 
         public FurnitureItem SelectedItem
         {
@@ -35,14 +38,19 @@ namespace FurnitureStore.ViewModels
                 SetValue(ref _selectedItem, value);
             }
         }
-        
+
+        public ICommand OpenFurnitureItemPreviewCommand => new Command<int>((furnitureItemId) => _navigationService.NavigateToAsync<FurnitureItemPreviewViewModel, int>(furnitureItemId));
+
         #endregion
 
-        public CategoryContentViewModel(IFurnitureItemsService furnitureItemsService)
+        public CategoryContentViewModel(
+            IFurnitureItemsService furnitureItemsService,
+            INavigationService navigationService)
         {
             Items = new ObservableCollection<FurnitureItem>();
 
             _furnitureItemsService = furnitureItemsService;
+            _navigationService = navigationService;
         }
 
         public async Task<bool> Initialize(FurnitureCategory category)

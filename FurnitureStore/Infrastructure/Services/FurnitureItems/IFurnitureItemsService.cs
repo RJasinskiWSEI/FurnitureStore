@@ -6,6 +6,8 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
     public interface IFurnitureItemsService
     {
         Task<IEnumerable<FurnitureItem>> GetFurnitureItems(FurnitureCategory category);
+
+        Task<FurnitureItem> GetFurnitureItem(int furnitureItemId);
     }
 
     public class FurnitureItem

@@ -51,6 +51,7 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
                 }
             },
         };
+        
 
         // In real App downloaded by REST Request or direct DB connection (not recommended in my opinion)
         public Task<IEnumerable<FurnitureItem>> GetFurnitureItems(FurnitureCategory category)
@@ -58,6 +59,16 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
             var categoryItems = _furnitureItems.Where(x => x.Value.Category == category).Select(x => x.Value);
 
             return Task.FromResult(categoryItems);
+        }
+
+        public Task<FurnitureItem> GetFurnitureItem(int furnitureItemId)
+        {
+            if (_furnitureItems.ContainsKey(furnitureItemId))
+            {
+                return Task.FromResult(_furnitureItems[furnitureItemId]);
+            }
+
+            throw new NullReferenceException($"Mebel o identyfikatorze {furnitureItemId} nie został znaleziony.");
         }
     }
 }
