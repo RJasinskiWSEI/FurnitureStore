@@ -69,18 +69,21 @@
     </Compile>
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Infrastructure\Exceptions\ControlNotInitializedException.cs" />
+    <Compile Include="Infrastructure\Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Infrastructure\IoC\DependencyLocator.cs" />
+    <Compile Include="Infrastructure\Services\FurnitureItems\FurnitureItemsService.cs" />
+    <Compile Include="Infrastructure\Services\FurnitureItems\IFurnitureItemsService.cs" />
     <Compile Include="Infrastructure\Services\Navigation\IInputData.cs" />
     <Compile Include="Infrastructure\Services\Navigation\INavigationService.cs" />
     <Compile Include="Infrastructure\Services\Navigation\NavigationService.cs" />
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
     <Compile Include="ViewModels\CartViewModel.cs" />
+    <Compile Include="ViewModels\CategoryContentViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Views\CategoryContentView.xaml.cs">
+      <DependentUpon>CategoryContentView.xaml</DependentUpon>
+    </Compile>
     <Page Include="CartView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CategoryItems.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,13 +95,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CategoryItems.xaml.cs">
-      <DependentUpon>CategoryItems.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\CategoryContentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

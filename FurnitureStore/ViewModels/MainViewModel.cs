@@ -1,4 +1,5 @@
 ﻿using FurnitureStore.Commands;
+using FurnitureStore.Infrastructure.Services.FurnitureItems;
 using FurnitureStore.Infrastructure.Services.Navigation;
 using FurnitureStore.ViewModels.Base;
 using System.Windows.Controls;
@@ -12,6 +13,7 @@ namespace FurnitureStore.ViewModels
 
         public ICommand OpenCartCommand => new Command(() => _navigationService.NavigateToAsync<CartViewModel>());
 
+        public ICommand OpenCategoryCommand => new Command<FurnitureCategory>((parameter) => _navigationService.NavigateToAsync<CategoryContentViewModel, FurnitureCategory>(parameter));
         
         public MainViewModel(INavigationService navigationService)
         {

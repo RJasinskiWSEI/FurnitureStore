@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:material="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:FurnitureStore.Windows"
+        xmlns:furniture="clr-namespace:FurnitureStore.Infrastructure.Services.FurnitureItems"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     
@@ -27,9 +28,9 @@
             <TextBlock Text="Kategorie:" FontSize="20" Padding="10,10,0,0" Foreground="#FFFFFF" FontWeight="Bold" />
             <StackPanel  Margin="0,50,0,0">
 
-                <Button Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Stoły" Background="#9E9E9E" />
-                <Button Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Szafy" Background="#BDBDBD" />
-                <Button Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Łóżka" Background="#9E9E9E" />
+                <Button Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Corners }" Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Narożniki" Background="#9E9E9E" />
+                <Button Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Beds }" Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Łóżka" Background="#BDBDBD" />
+                <Button Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Dressing }" Margin="0,5,0,5" Padding="25,0,0,0" FontSize="16" HorizontalContentAlignment="Left" Content="Toaletka" Background="#9E9E9E" />
 
                 <Label Margin="0,15,0,15" Height="2" Background="#BBDEFB" />
 

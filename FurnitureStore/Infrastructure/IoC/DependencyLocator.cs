@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using FurnitureStore.Infrastructure.Services.FurnitureItems;
 using FurnitureStore.Infrastructure.Services.Navigation;
 using FurnitureStore.ViewModels;
 using FurnitureStore.Windows;
@@ -38,6 +39,7 @@ namespace FurnitureStore.Infrastructure.IoC
         {
             builder.RegisterType<MainViewModel>().AsSelf();
             builder.RegisterType<CartViewModel>().AsSelf();
+            builder.RegisterType<CategoryContentViewModel>().AsSelf();
         }
     }
 
@@ -52,6 +54,9 @@ namespace FurnitureStore.Infrastructure.IoC
 
             builder.RegisterType<NavigationService>()
                 .As<INavigationService>();
+
+            builder.RegisterType<FurnitureItemsService>()
+                .As<IFurnitureItemsService>();
         }
     }
 }

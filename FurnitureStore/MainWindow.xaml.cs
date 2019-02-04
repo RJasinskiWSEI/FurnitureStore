@@ -29,11 +29,20 @@ namespace FurnitureStore.Windows
 
         public Page LoadedPage
         {
+
+
             get => _loadedPage;
             set
             {
                 _loadedPage = value;
                 Main.Content = value;
+
+                //Main.Refresh();
+
+                if (Main.CanGoBack)
+                {
+                    Main.RemoveBackEntry();
+                }
             }
         }
 

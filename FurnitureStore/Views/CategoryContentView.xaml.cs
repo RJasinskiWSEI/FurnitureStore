@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FurnitureStore
+namespace FurnitureStore.Views
 {
     /// <summary>
-    /// Interaction logic for CategoryItems.xaml
+    /// Interaction logic for CategoryContentView.xaml
     /// </summary>
-    public partial class CategoryItems : Page
+    public partial class CategoryContentView : Page
     {
-        public CategoryItems()
+        public CategoryContentView()
         {
             InitializeComponent();
         }

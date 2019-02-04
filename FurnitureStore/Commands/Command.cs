@@ -28,4 +28,35 @@ namespace FurnitureStore.Commands
             _action?.Invoke();
         }
     }
+
+    public class Command<TParameter> : ICommand
+    {
+        private readonly Action<TParameter> _action;
+
+        public event EventHandler CanExecuteChanged;
+
+
+        public Command(Action<TParameter> action)
+        {
+            _action = action;
+        }
+
+        public bool CanExecute(object parameterObj)
+        {
+            if (parameterObj is TParameter parameter)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public void Execute(object parameterObj)
+        {
+            if (parameterObj is TParameter parameter)
+            {
+                _action?.Invoke(parameter);
+            }
+        }
+    }
 }
