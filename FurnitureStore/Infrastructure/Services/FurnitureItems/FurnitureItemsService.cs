@@ -13,7 +13,7 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
             { 1, new FurnitureItem
                 {
                     Id = 1,
-                    Category = FurnitureCategory.Corners,
+                    Category = FurnitureCategory.Office,
                     Name = "BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1",
                     Description = "NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.",
                     Price = 6827.00m,
@@ -23,7 +23,7 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
             { 2, new FurnitureItem
                 {
                     Id = 2,
-                    Category = FurnitureCategory.Corners,
+                    Category = FurnitureCategory.Office,
                     Name = "BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1",
                     Description = "NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.",
                     Price = 6827.00m,
@@ -33,7 +33,7 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
             { 3, new FurnitureItem
                 {
                     Id = 3,
-                    Category = FurnitureCategory.Corners,
+                    Category = FurnitureCategory.Office,
                     Name = "BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1",
                     Description = "NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.",
                     Price = 6827.00m,
@@ -43,7 +43,7 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
             { 4, new FurnitureItem
                 {
                     Id = 4,
-                    Category = FurnitureCategory.Beds,
+                    Category = FurnitureCategory.Kitchen,
                     Name = "Łóżko Yoop YPL 09",
                     Description = "Młodzieżowe łóżko z kolekcji Yoop.",
                     Price = 365.00m,

@@ -28,11 +28,10 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
     // In real App should be domain model, not enum
     public enum FurnitureCategory
     {
-        Corners = 0,
-        Beds = 1,
-        Dressing = 2,
-        Tables = 3,
-        Shelfs = 4,
-        Chairs = 5
+        Office = 0,
+        Kitchen = 1,
+        Bathroom = 2,
+        Garden = 3,
+        LivingRoom = 4
     }
 }
