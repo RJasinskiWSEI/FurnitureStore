@@ -5,11 +5,26 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FurnitureStore.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="520" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="780"
       Title="CategoryContentView">
 
     <Grid Background="White">
-        <ListView x:Name="CategoryItems" ItemsSource="{ Binding Items }" SelectedItem="{ Binding SelectedItem }" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.227*" />
+            <RowDefinition Height="0.6*" />
+            <RowDefinition Height="0.1*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <StackPanel Background="#2196F3" Height="122">
+                <Label Height="15" Background="{ StaticResource DarkPrimaryBrush }" />
+                <TextBlock Padding="10,5,10,5" Foreground="#FFFFFF" FontSize="22" FontWeight="SemiBold">Wyposażenie ogrodu</TextBlock>
+                <TextBlock Padding="10,5,0,0" Foreground="#BBDEFB" FontSize="16" FontWeight="Light" TextWrapping="Wrap">Przykładowy długi opis kategorii wyposażenia ogrodu. Przykładowy długi opis kategorii wyposażenia ogrodu.Przykładowy długi opis kategorii wyposażenia ogrodu.</TextBlock>
+            </StackPanel>
+            <Label VerticalAlignment="Bottom" Height="1" Background="{StaticResource DarkPrimaryBrush}" />
+        </StackPanel>
+        
+        <ListView Grid.Row="1" x:Name="CategoryItems" ItemsSource="{ Binding Items }" SelectedItem="{ Binding SelectedItem }" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>

@@ -24,93 +24,96 @@
                 <Button Command="{ Binding Path = OpenCartCommand }" Content="Koszyk" BorderThickness="0" HorizontalAlignment="Right" Background="#9E9E9E"/>
             </StackPanel>
         </Grid>-->
-        <Grid Width="220" Background="{ StaticResource PrimaryBrush }" HorizontalAlignment="Left">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.1*" />
-                <RowDefinition Height="0.05*" />
-                <RowDefinition Height="0.5*" />
-                <RowDefinition Height="0.05*" />
-            </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Grid Width="220" Background="{ StaticResource PrimaryBrush }">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*" />
+                    <RowDefinition Height="0.05*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.05*" />
+                </Grid.RowDefinitions>
 
-            <StackPanel Grid.Column="0" Grid.Row="0">
-                <TextBlock Margin="0,10,0,0"
+                <StackPanel Grid.Column="0" Grid.Row="0">
+                    <TextBlock Margin="0,10,0,0"
                        HorizontalAlignment="Center" VerticalAlignment="Center"
                        Style="{ StaticResource ApplicationNameStyle }"
                        Text="Furniture Store"/>
-                
-                <Label Margin="0,1,0,0" Height="1" Width="160" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="White" />
-            </StackPanel>
 
-            <Grid Grid.Row="2" VerticalAlignment="Top">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+                    <Label Margin="0,1,0,0" Height="1" Width="160" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="White" />
+                </StackPanel>
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
+                <Grid Grid.Row="2" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
 
-                <Grid.Resources>
-                    <Style TargetType="{ x:Type Button }">
-                        <Setter Property="Margin" Value="0,2,0,2" />
-                    </Style>
-                    <Style TargetType="{ x:Type Image }">
-                        <Setter Property="Margin" Value="3,3,3,3" />
-                    </Style>
-                </Grid.Resources>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
 
-                <Button Grid.Row="0" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
+                    <Grid.Resources>
+                        <Style TargetType="{ x:Type Button }">
+                            <Setter Property="Margin" Value="0,2,-1,2" />
+                        </Style>
+                        <Style TargetType="{ x:Type Image }">
+                            <Setter Property="Margin" Value="3,3,3,3" />
+                        </Style>
+                    </Grid.Resources>
+
+                    <Button Grid.Row="0" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
                         Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Office }">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="{ StaticResource DarkPrimaryBrush }" />
-                        <Image Source="/Icons/office_menu_item.png" />
-                        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie biura</TextBlock>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="1" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="{ StaticResource DarkPrimaryBrush }" />
+                            <Image Source="/Icons/office_menu_item.png" />
+                            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie biura</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Row="1" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
                         Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Kitchen }">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
-                        <Image Source="/Icons/kitchen_menu_item.png" />
-                        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie kuchni</TextBlock>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="2" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
+                            <Image Source="/Icons/kitchen_menu_item.png" />
+                            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie kuchni</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Row="2" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
                         Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Bathroom }">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
-                        <Image Source="/Icons/bathroom_menu_item.png" />
-                        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie łazienki</TextBlock>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="3" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
+                            <Image Source="/Icons/bathroom_menu_item.png" />
+                            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie łazienki</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Row="3" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
                         Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.Garden }">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
-                        <Image Source="/Icons/garden_menu_item.png" />
-                        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie ogrodu</TextBlock>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="4" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
+                            <Image Source="/Icons/garden_menu_item.png" />
+                            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie ogrodu</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Row="4" BorderThickness="1" BorderBrush="#1976D2" FontSize="16" FontWeight="DemiBold" HorizontalContentAlignment="Left" Background="#03A9F4" Foreground="#FFFFFF"
                         Command="{ Binding OpenCategoryCommand }" CommandParameter="{ x:Static furniture:FurnitureCategory.LivingRoom }">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
-                        <Image Source="/Icons/living_room_menu_item.png" />
-                        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie salonu</TextBlock>
-                    </StackPanel>
-                </Button>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="-1,-1,0,-1" Width="5" HorizontalAlignment="Left" Background="#1976D2" />
+                            <Image Source="/Icons/living_room_menu_item.png" />
+                            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">Wysposażenie salonu</TextBlock>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="{ StaticResource TextIconsBrush }" Text="Copyright 2019 © WSEI" FontSize="9" />
             </Grid>
-            
-            <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="{ StaticResource TextIconsBrush }" Text="Copyright 2019 © WSEI" FontSize="9" />
-        </Grid>
-        <Grid Margin="220,0,0,0">
+            <Label Width="1" Background="{ StaticResource DarkPrimaryBrush }" />
+        </StackPanel>
+        <Grid Margin="221,0,0,0">
             <Frame x:Name="Main" NavigationUIVisibility="Hidden">
                 
             </Frame>
