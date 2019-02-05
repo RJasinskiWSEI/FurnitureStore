@@ -139,6 +139,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icons\office_menu_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\living_room_menu_item.png" />
+    <Resource Include="Icons\garden_menu_item.png" />
+    <Resource Include="Icons\bathroom_menu_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\kitchen_menu_item.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

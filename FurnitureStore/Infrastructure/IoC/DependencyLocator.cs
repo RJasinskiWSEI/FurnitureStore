@@ -3,6 +3,7 @@ using FurnitureStore.Infrastructure.Services.FurnitureItems;
 using FurnitureStore.Infrastructure.Services.Navigation;
 using FurnitureStore.ViewModels;
 using FurnitureStore.Windows;
+using FurnitureStore.Windows.Views;
 using System;
 
 namespace FurnitureStore.Infrastructure.IoC

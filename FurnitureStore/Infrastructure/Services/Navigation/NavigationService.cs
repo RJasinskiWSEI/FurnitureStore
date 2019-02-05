@@ -3,6 +3,7 @@ using FurnitureStore.Infrastructure.Exceptions;
 using FurnitureStore.ViewModels;
 using FurnitureStore.ViewModels.Base;
 using FurnitureStore.Windows;
+using FurnitureStore.Windows.Views;
 using System.Threading.Tasks;
 
 namespace FurnitureStore.Infrastructure.Services.Navigation
