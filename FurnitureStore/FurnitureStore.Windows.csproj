@@ -71,6 +71,8 @@
     <Compile Include="Infrastructure\Exceptions\ControlNotInitializedException.cs" />
     <Compile Include="Infrastructure\Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Infrastructure\IoC\DependencyLocator.cs" />
+    <Compile Include="Infrastructure\Services\Cart\CartService.cs" />
+    <Compile Include="Infrastructure\Services\Cart\ICartService.cs" />
     <Compile Include="Infrastructure\Services\FurnitureItems\FurnitureItemsService.cs" />
     <Compile Include="Infrastructure\Services\FurnitureItems\IFurnitureItemsService.cs" />
     <Compile Include="Infrastructure\Services\Navigation\IInputData.cs" />

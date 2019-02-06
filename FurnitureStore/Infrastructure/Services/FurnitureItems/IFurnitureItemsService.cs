@@ -24,6 +24,25 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
         public string ImageUrl { get; set; }
 
         public FurnitureCategory Category { get; set; }
+
+        #region Object(s) Overrides
+
+        public override bool Equals(object obj)
+        {
+            if (obj is FurnitureItem furnitureItem)
+            {
+                return furnitureItem.Id == this.Id;
+            }
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
+        } 
+
+        #endregion
     }
 
     [XmlRoot("FurnitureItemsList")]

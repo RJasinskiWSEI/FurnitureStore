@@ -1,4 +1,5 @@
 ﻿using FurnitureStore.Commands;
+using FurnitureStore.Infrastructure.Services.Cart;
 using FurnitureStore.Infrastructure.Services.FurnitureItems;
 using FurnitureStore.Infrastructure.Services.Navigation;
 using FurnitureStore.ViewModels.Base;
@@ -13,6 +14,10 @@ namespace FurnitureStore.ViewModels
 {
     public class CategoryContentViewModel : ViewModelBase, IInputData<FurnitureCategory>
     {
+        private readonly IFurnitureItemsService _furnitureItemsService;
+        private readonly INavigationService _navigationService;
+        private readonly ICartService _cartService;
+
         #region Bindings
 
         private ObservableCollection<FurnitureItem> _items;
@@ -27,8 +32,6 @@ namespace FurnitureStore.ViewModels
         }
 
         private FurnitureItem _selectedItem;
-        private readonly IFurnitureItemsService _furnitureItemsService;
-        private readonly INavigationService _navigationService;
 
         public FurnitureItem SelectedItem
         {
@@ -40,17 +43,26 @@ namespace FurnitureStore.ViewModels
         }
 
         public ICommand OpenFurnitureItemPreviewCommand => new Command<int>((furnitureItemId) => _navigationService.NavigateToAsync<FurnitureItemPreviewViewModel, int>(furnitureItemId));
+        public ICommand BuyItemCommand => new Command(() =>
+        {
+            if (SelectedItem == null)
+                return;
+
+            _cartService.AddItem(SelectedItem);
+        });
 
         #endregion
 
         public CategoryContentViewModel(
             IFurnitureItemsService furnitureItemsService,
-            INavigationService navigationService)
+            INavigationService navigationService,
+            ICartService cartService)
         {
             Items = new ObservableCollection<FurnitureItem>();
 
             _furnitureItemsService = furnitureItemsService;
             _navigationService = navigationService;
+            _cartService = cartService;
         }
 
         public async Task<bool> Initialize(FurnitureCategory category)
