@@ -64,10 +64,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CartView.xaml.cs">
-      <DependentUpon>CartView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Commands\Command.cs" />
+    <Compile Include="Converters\CartItemsSumConverter.cs" />
     <Compile Include="Infrastructure\Exceptions\ControlNotInitializedException.cs" />
     <Compile Include="Infrastructure\Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Infrastructure\IoC\DependencyLocator.cs" />
@@ -83,13 +81,16 @@
     <Compile Include="ViewModels\CategoryContentViewModel.cs" />
     <Compile Include="ViewModels\FurnitureItemPreviewViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Views\CartView.xaml.cs">
+      <DependentUpon>CartView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CategoryContentView.xaml.cs">
       <DependentUpon>CategoryContentView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FurnitureItemPreviewView.xaml.cs">
       <DependentUpon>FurnitureItemPreviewView.xaml</DependentUpon>
     </Compile>
-    <Page Include="CartView.xaml">
+    <Page Include="Views\CartView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,6 +165,12 @@
       <TargetPath>Resources\furniture_items.xml</TargetPath>
       <SubType>Designer</SubType>
     </ContentWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\printer_button_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\trash_button_item.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
