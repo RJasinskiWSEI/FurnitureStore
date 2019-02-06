@@ -10,18 +10,128 @@
   </Furniture>
   <Furniture>
     <Id>2</Id>
-    <Name>BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1</Name>
-    <Description>NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.</Description>
-    <Price>6827.00</Price>
-    <ImageUrl>https://szczawnicka.pl/images/WAJNERT/mini/350px_Bravo%20naroznik%203w%201ot.jpg</ImageUrl>
+    <Name>Mata pod fotel obrotowy w kolorze mlecznym (80x100)</Name>
+    <Description>Mata podłogowa dostępna jest w trzech rodzajach i rozmiarach. Klient może otrzymać zatem matę krystalicznie przejrzystą wykonaną z poliwęglanu lub też w kolorze mlecznym wykonana z polipropylenu i dostępna w dwóch rozmiarach.</Description>
+    <Price>67.00</Price>
+    <ImageUrl>https://e1.meble.pl/gfx/_zdjecia_e1/sklep_oferta/1/372/1372468/subtelna_mata_pod_fotel_obrotowy_w_kolorze_mleczn_1091780525.jpg</ImageUrl>
     <Category>Office</Category>
   </Furniture>
   <Furniture>
     <Id>3</Id>
-    <Name>BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1</Name>
-    <Description>NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.</Description>
-    <Price>6827.00</Price>
-    <ImageUrl>https://szczawnicka.pl/images/WAJNERT/mini/350px_Bravo%20naroznik%203w%201ot.jpg</ImageUrl>
+    <Name>POJEMNIK NA DŁUGOPISY VIENNA 1- SKÓRA REGENEROWANA</Name>
+    <Description>Podstawka skórzana na długopisy VIENNA 1 wykonana została ze skóry regenerowanej najwyższej jakości. Przeznaczona do nowocześnie urządzonych wnętrz takich jak: biuro, salon, jadlania oraz recepcja. Pochodzi ona z kolekcji mebli w całości wykonywanych ze skóry.</Description>
+    <Price>236.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/721/2721154/pojemnik_na_dlugopisy_vienna_1__skora_regenerowan_9559526921.jpg</ImageUrl>
     <Category>Office</Category>
+  </Furniture>
+  <Furniture>
+    <Id>4</Id>
+    <Name>WŁOSKA PODKŁADKA PLAY P</Name>
+    <Description>Podkładka PLAY dostępna jest w 3 rozmiarach: wpisz w wyszukiwarce nazwe "PLAY", a pojawią się wszystkie z produktów z tej kolekcji. Idealnie podkreślą one elegancję jadalni, biura. gabinetu czy salonu.</Description>
+    <Price> 236.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/721/2721148/wloska_podkladka_play_p_3607046620.jpg</ImageUrl>
+    <Category>Office</Category>
+  </Furniture>
+  <Furniture>
+    <Id>5</Id>
+    <Name>Mata podłogowa pod fotel obrotowy krystaliczna 100x125</Name>
+    <Description>Mata podłogowa dostępna jest w trzech rodzajach i rozmiarach. Klient może otrzymać zatem matę krystalicznie przejrzystą wykonaną z poliwęglanu lub też w kolorze mlecznym wykonana z polipropylenu i dostępna w dwóch rozmiarach.</Description>
+    <Price> 119.00</Price>
+    <ImageUrl>https://e1.meble.pl/gfx/_zdjecia_e1/sklep_oferta/1/760/1760982/mata_podlogowa_pod_fotel_obrotowy_krystaliczna_1x_9720701867.jpg</ImageUrl>
+    <Category>Office</Category>
+  </Furniture>
+
+  <Furniture>
+    <Id>6</Id>
+    <Name>Zestaw 4 szt. Podkładek z nadrukiem Korek Ladelle czarny LD-40046</Name>
+    <Description>Podkładka czy bieżnik? Co wolisz? aby zabezpieczyć swój stół przed zabrudzeniem i zniszczeniem. Marka Ladelle przychodzi z pomocą z tym dylematem i oferuje kilka ciekawych wzorów podkładek na stół.</Description>
+    <Price>132.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/572/2572847/zestaw_4_szt__podkladek_z_nadrukiem_korek_ladelle_2165196526.jpg</ImageUrl>
+    <Category>Kitchen</Category>
+  </Furniture>
+  <Furniture>
+    <Id>7</Id>
+    <Name>Ekspres do kawy GRAEF BARONESSA ES 902 czarny</Name>
+    <Description>Dzięki ekspresowi do kawy firmy Graef, modelowi ES 902 "Baronessa", idealne cappuccino można przygotować teraz jeszcze szybciej. Podwójny układ pomp, z dwoma oddzielnymi obiegami grzewczymi bez długich czasów podgrzewania, pozwala na jednoczesne przygotowywanie espresso i pianki mlecznej.</Description>
+    <Price>3924.00</Price>
+    <ImageUrl>https://s1.meble.pl/gfx/_zdjecia_wspolne/sklep_oferta/2/978/2978364/ekspres_do_kawy_graef_baronessa_es_92_czarny_3223467031.jpg</ImageUrl>
+    <Category>Kitchen</Category>
+  </Furniture>
+  <Furniture>
+    <Id>8</Id>
+    <Name>Chlebak z bambusową deską do krojenia szary</Name>
+    <Description>Wolnostojący pojemnik na chleb Manna do nowoczesnych kuchni. Można swobodnie go przenosić, z każdej strony wygląda świetnie. Stawiając go na stole można serwować pieczywo, po czym przykrywając pokrywą odstawić na blat.</Description>
+    <Price> 59.00</Price>
+    <ImageUrl>https://s1.meble.pl/gfx/_zdjecia_wspolne/sklep_oferta/2/882/2882090/chlebak_z_bambusowa_deska_do_krojenia_szary___ind_5988783419.jpg</ImageUrl>
+    <Category>Kitchen</Category>
+  </Furniture>
+  
+  <Furniture>
+    <Id>9</Id>
+    <Name>Okrągła mata łazienkowa 80 cm</Name>
+    <Description>Okrągła mata łazienkowaWymiary: średnica 80 cmKolor: szary/białyMateriał: bawełnaWymiary: diamtr: 80cmEAN: 8718921003322JEDNOSTKA MIARY: sztuka</Description>
+    <Price>120.00</Price>
+    <ImageUrl>https://s1.meble.pl/gfx/_zdjecia_wspolne/sklep_oferta/2/638/2638359/okragla_mata_lazienkowa_8_cm_8736452262.jpg</ImageUrl>
+    <Category>Bathroom</Category>
+  </Furniture>
+  <Furniture>
+    <Id>10</Id>
+    <Name>Dozownik do mydła 450 ml Koziol DW GRACE biały KZ-5877525</Name>
+    <Description>Elegancki i pomysłowy dozownik do mydła Koziol Grace. Kształtem przypomina kaczuszkę.</Description>
+    <Price>119.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/1/490/1490149/dozownik_do_mydla_bialy_grace_kz_5877525_1626229917.jpg</ImageUrl>
+    <Category>Bathroom</Category>
+  </Furniture>
+  
+  
+  
+  <Furniture>
+    <Id>11</Id>
+    <Name>Pokrowiec na meble ogrodowe 220x200x100</Name>
+    <Description>Wykonane z solidnej tkaniny poliestrowej, impregnowanej, dodatkowo podklejonej PCV- całość o gramaturze 480/m2, szyte nićmi poliestrowymi (podwójnym sciegiem), szczególnie wytrzymałe i odporne w miejscach łączeń na działanie wilgoci, promieni słonecznych, szarpnięć i podmuchów wiatru.</Description>
+    <Price>99.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/1/464/1464866/pokrowiec_na_meble_ogrodowe_22x2x1_8775019365.jpg</ImageUrl>
+    <Category>Garden</Category>
+  </Furniture>
+  <Furniture>
+    <Id>12</Id>
+    <Name>PARASOL PON CZARNY 3X3</Name>
+    <Description>Aluminiowa, powlekana rama. Rura podstawy posiada średnicę 48 x1,8 mm. Ośmioramienny stelaż (3x3) 20x30x1.0mm . Tkanina OLEFIN (polipropylen) 200gr/m2. Wstawki ze sztucznej skóry. Produkt do montażu.</Description>
+    <Price>2385.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/710/2710507/parasol_pon_czarny_3x3_96473810.jpg</ImageUrl>
+    <Category>Garden</Category>
+  </Furniture>
+  <Furniture>
+    <Id>13</Id>
+    <Name>NAMIOT LER NAT 3x4</Name>
+    <Description>Aluminiowa rama powlekana proszkowo. Rury Ø80 mm, belka poprzeczna 60x27 mm, rury zadaszenia 16x26 mm. Materiał poliestrowy 200 gr/m2. Poliestrowe ściany boczne 160gr/m2 z moskitierami w zestawie. </Description>
+    <Price>3210.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/745/2745457/namiot_ler_nat_3x4_9564268236.jpg</ImageUrl>
+    <Category>Garden</Category>
+  </Furniture>
+
+  <Furniture>
+    <Id>14</Id>
+    <Name>DYWAN DO SALONU IVETTE OMBRE SALUDE SAGA 160x230 cm</Name>
+    <Description>Ivette Omre Salude Saga to dywan z kolekcji Handmade. Został ręcznie wytkany. Jego struktura jest przyjemna w dotyku, a także mięsista i gęsta. Posiadamy dywan o rozmiarze 200x300, który kosztuje 2399 zł. Dysponujemy innymi dywanami.</Description>
+    <Price>1499.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/880/2880830/dywan_do_salonu_ivette_ombre_salude_saga_16x23_cm_4266363761.jpg</ImageUrl>
+    <Category>LivingRoom</Category>
+  </Furniture>
+  <Furniture>
+    <Id>15</Id>
+    <Name>Metalowa waza Chimney, miedź oksydowana</Name>
+    <Description> Metalowa waza Chimney, miedź oksydowana. Wysokość: 47 cm. Kod produktu: 800613-C</Description>
+    <Price>230.00</Price>
+    <ImageUrl>https://s1.meble.pl/gfx/_zdjecia_wspolne/sklep_oferta/2/639/2639985/metalowa_waza_chimney_miedz_oksydowana_2249762145.jpg</ImageUrl>
+    <Category>LivingRoom</Category>
+  </Furniture>
+  <Furniture>
+    <Id>16</Id>
+    <Name>WAZON WŁOSKI SOFIA XXL</Name>
+    <Description>Włoski wazon SOFIA XXL został całościowo uformowany i wykonany ze skóry regenerowanej o najwyższej jakości. Dzięki temu wygląda rewelacyjnie. Następnie w drobiazgowy sposób został ręcznie przeszyty specjalną nicią ozdobną. Trwałość formy jest zapewniona przez elegancki metalowy stelaż, który skrywa się pod suknią z szykownej skóry.</Description>
+    <Price>1976.00</Price>
+    <ImageUrl>https://e2.meble.pl/gfx/_zdjecia_e2/sklep_oferta/2/721/2721119/wazon_wloski_sofia_xxl_5716258363.jpg</ImageUrl>
+    <Category>LivingRoom</Category>
   </Furniture>
 </FurnitureItemsList>
