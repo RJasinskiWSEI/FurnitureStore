@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FurnitureItemsList>
+  <Furniture>
+    <Id>1</Id>
+    <Name>BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1</Name>
+    <Description>NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.</Description>
+    <Price>6827.00</Price>
+    <ImageUrl>https://szczawnicka.pl/images/WAJNERT/mini/350px_Bravo%20naroznik%203w%201ot.jpg</ImageUrl>
+    <Category>Office</Category>
+  </Furniture>
+  <Furniture>
+    <Id>2</Id>
+    <Name>BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1</Name>
+    <Description>NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.</Description>
+    <Price>6827.00</Price>
+    <ImageUrl>https://szczawnicka.pl/images/WAJNERT/mini/350px_Bravo%20naroznik%203w%201ot.jpg</ImageUrl>
+    <Category>Office</Category>
+  </Furniture>
+  <Furniture>
+    <Id>3</Id>
+    <Name>BRAVO NAROŻNIK 3w-1ot z funkcją spania w skórach s1</Name>
+    <Description>NAROŻNIK ( SEGM. 3W L/1130W + SEGM. 1ot P/5210)) z kolekcji Bravo i w grupie materiałowej A1. Możliwość zamówienia w innej grupie tkaninowej- cena zależna od grupy tkaninowej. Kolekcja BRAVO to pomysł jak pośród codziennego pośpiechu wprowadzić do domu odrobinę przytulnej, leniwej atmosfery i odprężającego relaksu.</Description>
+    <Price>6827.00</Price>
+    <ImageUrl>https://szczawnicka.pl/images/WAJNERT/mini/350px_Bravo%20naroznik%203w%201ot.jpg</ImageUrl>
+    <Category>Office</Category>
+  </Furniture>
+</FurnitureItemsList>

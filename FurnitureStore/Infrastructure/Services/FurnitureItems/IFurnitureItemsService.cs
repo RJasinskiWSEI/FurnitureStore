@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace FurnitureStore.Infrastructure.Services.FurnitureItems
 {
@@ -23,6 +24,13 @@ namespace FurnitureStore.Infrastructure.Services.FurnitureItems
         public string ImageUrl { get; set; }
 
         public FurnitureCategory Category { get; set; }
+    }
+
+    [XmlRoot("FurnitureItemsList")]
+    public class FurnitureItemsList
+    {
+        [XmlElement("Furniture")]
+        public List<FurnitureItem> FurnitureItems { get; set; }
     }
 
     // In real App should be domain model, not enum
