@@ -1,9 +1,7 @@
-﻿using FurnitureStore.Infrastructure.Services.FurnitureItems;
-using FurnitureStore.Infrastructure.Services.Navigation;
+﻿using FurnitureStore.Models;
+using FurnitureStore.Services.FurnitureItems;
 using FurnitureStore.ViewModels.Base;
-using FurnitureStore.Views;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 
 namespace FurnitureStore.ViewModels
 {
@@ -43,9 +41,9 @@ namespace FurnitureStore.ViewModels
 
         #region ViewModelBase Implementation
 
-        public override Page GetPage()
+        public override string GetDefaultPageName()
         {
-            return new FurnitureItemPreviewView();
+            return "FurnitureItemPreviewView";
         }
 
         #endregion

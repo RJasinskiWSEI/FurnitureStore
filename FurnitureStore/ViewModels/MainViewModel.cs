@@ -1,8 +1,7 @@
 ﻿using FurnitureStore.Commands;
-using FurnitureStore.Infrastructure.Services.FurnitureItems;
-using FurnitureStore.Infrastructure.Services.Navigation;
+using FurnitureStore.Models;
+using FurnitureStore.Services.Navigation;
 using FurnitureStore.ViewModels.Base;
-using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace FurnitureStore.ViewModels
@@ -20,9 +19,9 @@ namespace FurnitureStore.ViewModels
             _navigationService = navigationService;
         }
         
-        public override Page GetPage()
+        public override string GetDefaultPageName()
         {
-            return null;
+            return "GetPageTypeName";
         }
     }
 }

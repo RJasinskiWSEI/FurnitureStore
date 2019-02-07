@@ -1,16 +1,11 @@
 ﻿using FurnitureStore.Commands;
-using FurnitureStore.Infrastructure.Services.Cart;
+using FurnitureStore.Models;
+using FurnitureStore.Services.Cart;
 using FurnitureStore.ViewModels.Base;
-using FurnitureStore.Views;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Input;
-using static FurnitureStore.Infrastructure.Services.Cart.CartService;
 
 namespace FurnitureStore.ViewModels
 {
@@ -44,9 +39,9 @@ namespace FurnitureStore.ViewModels
             return Task.FromResult(true);
         }
 
-        public override Page GetPage()
+        public override string GetDefaultPageName()
         {
-            return new CartView();
+            return "CartView";
         }
     }
 }

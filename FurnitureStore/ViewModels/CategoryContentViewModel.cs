@@ -1,13 +1,12 @@
 ﻿using FurnitureStore.Commands;
-using FurnitureStore.Infrastructure.Services.Cart;
-using FurnitureStore.Infrastructure.Services.FurnitureItems;
-using FurnitureStore.Infrastructure.Services.Navigation;
+using FurnitureStore.Models;
+using FurnitureStore.Services.Cart;
+using FurnitureStore.Services.FurnitureItems;
+using FurnitureStore.Services.Navigation;
 using FurnitureStore.ViewModels.Base;
-using FurnitureStore.Views;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace FurnitureStore.ViewModels
@@ -74,9 +73,9 @@ namespace FurnitureStore.ViewModels
 
         #region ViewModelBase Implementations
 
-        public override Page GetPage()
+        public override string GetDefaultPageName()
         {
-            return new CategoryContentView();
+            return "CategoryContentView";
         }
 
         #endregion

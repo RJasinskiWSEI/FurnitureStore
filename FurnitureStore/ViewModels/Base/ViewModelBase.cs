@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 
 namespace FurnitureStore.ViewModels.Base
 {
@@ -15,7 +14,7 @@ namespace FurnitureStore.ViewModels.Base
             return Task.FromResult(true);
         }
 
-        public abstract Page GetPage();
+        public abstract string GetDefaultPageName();
 
         protected void SetValue<T>(ref T field, T value, [CallerMemberName]string propertyName = null)
         {
