@@ -11,14 +11,26 @@ namespace FurnitureStore.ViewModels
 {
     public class CartViewModel : ViewModelBase
     {
-        private ObservableCollection<CartItem> _cartItems;
         private readonly ICartService _cartService;
 
+        #region Bindings
+
+        private ObservableCollection<CartItem> _cartItems;
         public ObservableCollection<CartItem> CartItems
         {
             get => _cartItems;
             set => SetValue(ref _cartItems, value);
         }
+
+        public ICommand ClearShoppingCartCommand => new Command(async () =>
+        {
+            _cartService.ClearCart();
+            await Initialize();
+        });
+
+        #endregion
+
+        #region Constructor(s)
 
         public CartViewModel(ICartService cartService)
         {
@@ -26,11 +38,9 @@ namespace FurnitureStore.ViewModels
             _cartService = cartService;
         }
 
-        public ICommand ClearShoppingCart => new Command(async () =>
-        {
-            _cartService.ClearCart();
-            await Initialize();
-        });
+        #endregion
+
+        #region ViewModelBase Implementation
 
         public override Task<bool> Initialize()
         {
@@ -42,6 +52,8 @@ namespace FurnitureStore.ViewModels
         public override string GetDefaultPageName()
         {
             return "CartView";
-        }
+        } 
+
+        #endregion
     }
 }

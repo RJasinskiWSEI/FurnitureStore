@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureStore", "Furniture
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureStore.Models", "FurnitureStore.Models\FurnitureStore.Models.csproj", "{D8AB52B6-CF5A-4743-B534-42C2AA3AA48D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureStore.Tests", "FurnitureStore.Tests\FurnitureStore.Tests.csproj", "{AA0035BB-7BDE-4088-99EC-E3B706DA619F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D8AB52B6-CF5A-4743-B534-42C2AA3AA48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8AB52B6-CF5A-4743-B534-42C2AA3AA48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8AB52B6-CF5A-4743-B534-42C2AA3AA48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0035BB-7BDE-4088-99EC-E3B706DA619F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0035BB-7BDE-4088-99EC-E3B706DA619F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0035BB-7BDE-4088-99EC-E3B706DA619F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0035BB-7BDE-4088-99EC-E3B706DA619F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

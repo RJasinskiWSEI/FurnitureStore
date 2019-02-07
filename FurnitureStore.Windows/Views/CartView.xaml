@@ -113,7 +113,7 @@
 
             <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button VerticalAlignment="Center" Height="70" HorizontalAlignment="Center" Padding="10,10,10,10" Margin="10,10,10,10"
-                        Command="{ Binding ClearShoppingCart }">
+                        Command="{ Binding ClearShoppingCartCommand }">
                     <StackPanel Orientation="Horizontal">
                         <Image Margin="5,5,5,5" Source="/Icons/trash_button_item.png" />
                         <TextBlock Text="Wyczyść koszyk" FontSize="14" Margin="0,0,5,0" FontWeight="SemiBold" VerticalAlignment="Center" />
