@@ -7,6 +7,9 @@ using System.Text;
 
 namespace FurnitureStore.Services.Cart
 {
+    /// <summary>
+    /// Provices the implementation of ICartService.
+    /// </summary>
     public class CartService : ICartService
     {
         private readonly List<CartItem> _cartItems;
