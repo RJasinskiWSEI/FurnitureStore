@@ -28,6 +28,8 @@ namespace FurnitureStore.ViewModels
             await Initialize();
         });
 
+        public ICommand CheckoutShoppingCartCommand => new Command(() => _cartService.Checkout());
+
         #endregion
 
         #region Constructor(s)

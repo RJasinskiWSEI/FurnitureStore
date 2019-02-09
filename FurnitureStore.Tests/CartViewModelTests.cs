@@ -23,6 +23,15 @@ namespace FurnitureStore.Tests
         }
 
         [TestMethod]
+        public void CheckoutShoppingCart_IsNotNull()
+        {
+            var cartService = Mock.Of<ICartService>();
+            var viewModel = new CartViewModel(cartService);
+
+            Assert.IsNotNull(viewModel.CheckoutShoppingCartCommand);
+        }
+
+        [TestMethod]
         public void CartItems_AreNotNull()
         {
             var cartService = Mock.Of<ICartService>();

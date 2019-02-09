@@ -34,8 +34,13 @@
     <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="IronPdf, Version=4.4.9.15720, Culture=neutral, PublicKeyToken=94e1c31412563c75, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPdf.4.4.9\lib\net40\IronPdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,7 +62,6 @@
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
     <Compile Include="ViewModels\CartViewModel.cs" />
     <Compile Include="ViewModels\CategoryContentViewModel.cs" />
-    <Compile Include="ViewModels\FurnitureItemPreviewViewModel.cs" />
     <Compile Include="ViewModels\Base\IInputData.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>

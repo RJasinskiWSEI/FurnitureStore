@@ -43,7 +43,6 @@ namespace FurnitureStore.Windows.IoC
             builder.RegisterType<MainViewModel>().AsSelf();
             builder.RegisterType<CartViewModel>().AsSelf();
             builder.RegisterType<CategoryContentViewModel>().AsSelf();
-            builder.RegisterType<FurnitureItemPreviewViewModel>().AsSelf();
         }
     }
 
