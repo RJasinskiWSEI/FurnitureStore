@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace FurnitureStore.Services.Navigation
 {
+    /// <summary>
+    /// Provides the INavigationService implementation.
+    /// </summary>
     public class NavigationService : INavigationService
     {
         private readonly IComponentContext _context;
@@ -20,7 +23,7 @@ namespace FurnitureStore.Services.Navigation
             _pageResolver = pageResolver;
         }
 
-        public Task Initialize()
+        public Task InitializeAsync()
         {
             var mainWindow = _context.Resolve<IMainWindow>();
 
@@ -35,7 +38,7 @@ namespace FurnitureStore.Services.Navigation
         {
             var viewModel = _context.Resolve<TViewModel>();
 
-            if (!await viewModel.Initialize())
+            if (!await viewModel.InitializeAsync())
             {
                 throw new ControlNotInitializedException(nameof(TViewModel));
             }
@@ -53,7 +56,7 @@ namespace FurnitureStore.Services.Navigation
         {
             var viewModel = _context.Resolve<TViewModel>();
 
-            if (!await viewModel.Initialize() || !await viewModel.Initialize(navParameter))
+            if (!await viewModel.InitializeAsync() || !await viewModel.InitializeAsync(navParameter))
             {
                 throw new ControlNotInitializedException(nameof(TViewModel));
             }

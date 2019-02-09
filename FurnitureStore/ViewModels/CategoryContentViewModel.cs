@@ -11,6 +11,9 @@ using System.Windows.Input;
 
 namespace FurnitureStore.ViewModels
 {
+    /// <summary>
+    /// Provides logic for Category Content.
+    /// </summary>
     public class CategoryContentViewModel : ViewModelBase, IInputData<FurnitureCategory>
     {
         private readonly IFurnitureItemsService _furnitureItemsService;
@@ -65,7 +68,7 @@ namespace FurnitureStore.ViewModels
 
         #region IInputData<FurnitureCategory> Implementation
 
-        public async Task<bool> Initialize(FurnitureCategory category)
+        public async Task<bool> InitializeAsync(FurnitureCategory category)
         {
             Items = (await _furnitureItemsService.GetFurnitureItems(category)).ToObservableCollection();
 

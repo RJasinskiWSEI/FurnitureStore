@@ -29,6 +29,9 @@ namespace FurnitureStore.Commands
         }
     }
 
+    /// <summary>
+    /// Defines a ICommand implementation for bindings with parameter.
+    /// </summary>
     public class Command<TParameter> : ICommand
     {
         private readonly Action<TParameter> _action;

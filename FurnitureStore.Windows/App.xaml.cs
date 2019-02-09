@@ -26,7 +26,7 @@ namespace FurnitureStore.Windows
         {
             var navigation = DependencyLocator.Resolve<INavigationService>();
 
-            await navigation.Initialize();
+            await navigation.InitializeAsync();
         }
     }
 }

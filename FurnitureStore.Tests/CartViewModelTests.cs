@@ -51,7 +51,7 @@ namespace FurnitureStore.Tests
             }).AsReadOnly());
 
             var viewModel = new CartViewModel(cartServiceMock.Object);
-            viewModel.Initialize();
+            viewModel.InitializeAsync();
 
             Assert.IsNotNull(viewModel.CartItems);
             Assert.IsTrue(viewModel.CartItems.Any());

@@ -2,6 +2,9 @@
 
 namespace FurnitureStore.Infrastructure.Exceptions
 {
+    /// <summary>
+    /// The exception that is thrown when there is and attempt to not initialized control.
+    /// </summary>
     [Serializable]
     public class ControlNotInitializedException : Exception
     {

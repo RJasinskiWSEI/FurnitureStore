@@ -9,6 +9,9 @@ using System.Windows.Input;
 
 namespace FurnitureStore.ViewModels
 {
+    /// <summary>
+    /// Provides logic for Shopping Cart.
+    /// </summary>
     public class CartViewModel : ViewModelBase
     {
         private readonly ICartService _cartService;
@@ -25,7 +28,7 @@ namespace FurnitureStore.ViewModels
         public ICommand ClearShoppingCartCommand => new Command(async () =>
         {
             _cartService.ClearCart();
-            await Initialize();
+            await InitializeAsync();
         });
 
         public ICommand CheckoutShoppingCartCommand => new Command(() => _cartService.Checkout());
@@ -44,7 +47,7 @@ namespace FurnitureStore.ViewModels
 
         #region ViewModelBase Implementation
 
-        public override Task<bool> Initialize()
+        public override Task<bool> InitializeAsync()
         {
             CartItems = _cartService.GetCartItems().ToObservableCollection();
 

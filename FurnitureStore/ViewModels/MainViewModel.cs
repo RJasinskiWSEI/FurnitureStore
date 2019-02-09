@@ -6,6 +6,9 @@ using System.Windows.Input;
 
 namespace FurnitureStore.ViewModels
 {
+    /// <summary>
+    /// Defines logic for the Main Application Page.
+    /// </summary>
     public class MainViewModel : ViewModelBase
     {
         private readonly INavigationService _navigationService;

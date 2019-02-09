@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace FurnitureStore.Services.FurnitureItems
 {
+    /// <summary>
+    /// Provides IFurnitureItemsService implementation.
+    /// </summary>
     public class FurnitureItemsService : IFurnitureItemsService
     {
         private static readonly Dictionary<int, FurnitureItem> _furnitureItems;

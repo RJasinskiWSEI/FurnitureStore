@@ -54,7 +54,7 @@ namespace FurnitureStore.Tests
                 cartServiceMock.Object
             );
 
-            viewModel.Initialize(It.IsAny<FurnitureCategory>()).Wait();
+            viewModel.InitializeAsync(It.IsAny<FurnitureCategory>()).Wait();
 
             Assert.IsNotNull(viewModel.Items);
             Assert.IsTrue(furnitures.Count() == viewModel.Items.Count());
