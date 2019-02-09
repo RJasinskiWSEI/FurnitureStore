@@ -41,7 +41,6 @@ namespace FurnitureStore.ViewModels
             }
         }
 
-        public ICommand OpenFurnitureItemPreviewCommand => new Command<int>((furnitureItemId) => _navigationService.NavigateToAsync<FurnitureItemPreviewViewModel, int>(furnitureItemId));
         public ICommand BuyItemCommand => new Command(() =>
         {
             if (SelectedItem == null)
@@ -64,12 +63,16 @@ namespace FurnitureStore.ViewModels
             _cartService = cartService;
         }
 
+        #region IInputData<FurnitureCategory> Implementation
+
         public async Task<bool> Initialize(FurnitureCategory category)
         {
             Items = (await _furnitureItemsService.GetFurnitureItems(category)).ToObservableCollection();
 
             return true;
-        }
+        } 
+
+        #endregion
 
         #region ViewModelBase Implementations
 
